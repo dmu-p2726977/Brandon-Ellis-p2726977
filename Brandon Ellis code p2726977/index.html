@@ -1,0 +1,75 @@
+<!-- The doctype is to make my code a website and the html lang to to make sure my website is in english. The meta charset is to make sure my website fits onto desktop screen-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Brandon's Portfolio</title>
+        <link href="style.css" rel="stylesheet" type="text/css" >
+    </head>
+    <!-- body is where you write all the main coding of my website in on what i want to be show such as colour, images and text-->
+    <body style="color:blue; background-color:white">
+        <!-- the nav class is telling the code it drop down button where I can click on name of my pages names-->
+        <nav class="menu">
+            <!-- This hamburger icon has come from https://commons.wikimedia.org/wiki/File:Hamburger_icon.svg -->
+            <div class="openMenuButton">
+                <img class="menuOpenBtn" src="img/menuBtn.png">
+            </div>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+        <!--the script is the jarvascript what is a certain type of coding that makes the coding act the way it does-->
+        <script>
+            toggleAnimation=(evt) => {
+                document.querySelector('.menu').classList.toggle("out");
+            };
+            document
+            .querySelector(".openMenuButton")
+            .addEventListener("click", toggleAnimation);
+        </script>
+        <!--the header is just to make the text be postioned as header on my website-->
+        <header>
+            <h1 style="border: 1px orange solid; font-family: sans-serif">Brandon Portfolio</h1>
+            <h2 style="font-family: sans-serif">Wide range of mixed work</h2>
+        </header>
+        <!-- the P is to position my text as paragraph-->
+        <p style="color:green">My portfolio will have mixed ranged of my media such as posters, edited videos and many more designs as well as short edits.</p>
+        <!--the blockquote re position the text inbetween the code differently from the rest of the text-->
+        <!-- the footer is code where is positions my text as a footer on the website-->
+        <blockquote style="color:green">
+            <p>The Media work that is show throughtout the pages was created during my Creative Media and Media Production Course.</p>
+            <footer>There is still more work to be added whilst i'm still my Media Production course during my studies. </footer>
+        </blockquote> 
+        <h3 style="font-family: sans-serif">Media work category's</h3>
+        <!-- the ul is to create a list format-->
+        <ul style="color:yellow; background:purple; margin: 20px">
+            <li>Poster's</li>
+            <li>Magazine cover's</li>
+            <li>Short edit's</li>
+        </ul>
+        <!-- the div class groups bunch a styles together instead of need to keep typing the code over and over again-->
+        <!--img src is link to where my images are-->
+            <div class="studioImg">
+                <img src="img/Final poster 1 outcome.jpg" alt="TV Studio">
+                <p>Xbox controller poster</p>
+            </div>
+            <div class="studioImg">
+                <img src="img/Final poster design 3.jpg" alt="TV Studio">
+                <p>Gaming organsation poster</p>
+            </div>
+            <div class="studioImg">
+                <img src="img/Near The End Of Humanity magazine cover.jpg" alt="TV Studio">
+                <p>Magazine cover</p>
+            </div>
+            <div class="studioImg">
+                <img src="img/Final poster 5- outcome.jpg" alt="TV Studio">
+                <p>Gaming culture poster</p>
+            </div>
+            <div class="studioImg">
+                <img src="img/Final poster 4 outcome.jpg" alt="TV Studio">
+                <p>Motivation gaming poster design</p>
+            </div>
+            <div class="studioImg">
+                <img src="img/Final poster 2 outcome.jpg" alt="TV Studio">
+                <p>100 Theives gaming poster design</p>
+            </div>
+</html>

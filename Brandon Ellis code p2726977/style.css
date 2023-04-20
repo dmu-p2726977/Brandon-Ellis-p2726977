@@ -1,0 +1,81 @@
+/*these rules are to position all my images that has is class*/
+.studioImg {
+    width: 33%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+/*this is the rules for the imagies*/
+
+img {
+    max-width: 100%;
+}
+/*these rules are for any coding that inbetween the header coding*/
+header {
+    padding: 10px;
+    background-image: url();
+    background-size: 100%;
+    background-position: 0% 45%;
+}
+/*these rules are to position all my main headers for my websit*/
+header h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+header h4 {
+    text-align: center;
+    font-size: 3em;
+}
+
+header h5 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/*The open menu button and menu rules are for my button to work on my website for viewers to navagigate between each page*/
+
+.openMenuButton {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.menu {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.menu.out {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.menu a {
+    font-size: 3em;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.menuitem{
+    pointer-events: none;
+}
+
+.menu.out .menuitem {
+    pointer-events: all;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <nav class="menu">
+        <!-- This hamburger icon has come from https://commons.wikimedia.org/wiki/File:Hamburger_icon.svg -->
+        <div class="openMenuButton">
+            <img class="menuOpenBtn" src="img/menuBtn.png">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <script>
+        toggleAnimation=(evt) => {
+            document.querySelector('.menu').classList.toggle("out");
+        };
+        document
+        .querySelector(".openMenuButton")
+        .addEventListener("click", toggleAnimation);
+    </script>
+    <header>
+        <h4 style="border: 1px orange solid; font-family: sans-serif">Gallery</h4>
+    </header>
+    <p2>The gallery page is my work across my studies and my spare time that I have created or been part of. 
+        As i havent been studying Media for along time, I haven't got loads to show, but during my studio's at University, more work will be getting added. </p2>
+    <div class="studioImg">
+        <img src="img/Final poster 1 outcome.jpg" alt="TV Studio">
+        <p>Xbox controller poster</p>
+    </div>
+    <div class="studioImg">
+        <img src="img/Final poster 2 outcome.jpg" alt="TV Studio">
+        <p>100 Theives gaming poster design</p>
+    </div>
+    <div class="studioImg">
+        <img src="img/Final poster design 3.jpg" alt="TV Studio">
+        <p>100 Theives gaming poster design</p>
+    </div>
+    <div class="studioImg">
+        <img src="img/Final poster 4 outcome.jpg" alt="TV Studio">
+        <p>Motivation gaming poster design</p>
+    </div>
+    <div class="studioImg">
+        <img src="img/Final poster 5- outcome.jpg" alt="TV Studio">
+        <p>Gaming culture poster</p>
+    </div>
+    <div class="studioImg">
+        <img src="img/Near The End Of Humanity magazine cover.jpg" alt="TV Studio">
+        <p>Maagazine cover</p>
+    </div> 
+    <header>
+        <h5>How to Contact Me</h5>
+    </header>
+    <footer>
+        <ul>
+            <li>Phone number: 07366917299</li>
+            <li>Email: Brandonellis666@gmail.com</li>
+        </ul>
+    </footer>
+</body>
+</html>
+
